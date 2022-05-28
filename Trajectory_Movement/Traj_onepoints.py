@@ -25,6 +25,11 @@ q1 = np.array([deg_to_rad(90),
 Traj1 = rtb.jtraj(q0,q1,25)
 Traj2 = rtb.jtraj(q1,q0,25)
 
+"""
+rtb.qplot(Traj1.q)
+rtb.qplot(Traj2.q)
+"""
+
 x1 = -1.0
 x2 =1.0
 y1 =-1.0
