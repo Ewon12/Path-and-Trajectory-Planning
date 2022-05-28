@@ -18,27 +18,12 @@ from lib.FK import *
 
 q0 = np.array([0,0,0])
 q1 = np.array([deg_to_rad(90),
-                0,
-                0,
-                ])
-q2 = np.array([deg_to_rad(90),
-                deg_to_rad(-90),
-                0,
-                ])
-q3 = np.array([deg_to_rad(90),
                 deg_to_rad(-90),
                 mm_to_meter(200)
                 ])
 
-T1 = rtb.jtraj(q0,q1,25)
-T2 = rtb.jtraj(q1,q2,25)
-d3 = rtb.jtraj(q2,q3,25)
-
-
-
-d3_return = rtb.jtraj(q3,q2,25)
-T2_return = rtb.jtraj(q2,q1,25)
-T1_return = rtb.jtraj(q1,q0,25)
+Traj1 = rtb.jtraj(q0,q1,25)
+Traj2 = rtb.jtraj(q1,q0,25)
 
 x1 = -1.0
 x2 =1.0
@@ -47,9 +32,6 @@ y2 = 1.0
 z1 =-1.0
 z2 = 1.0
 
-Sphe_Modern.plot(T1.q,limits =[x1, x2, y1, y2, z1, z2])
-Sphe_Modern.plot(T2.q,limits =[x1, x2, y1, y2, z1, z2])
-Sphe_Modern.plot(d3.q,limits =[x1, x2, y1, y2, z1, z2])
-Sphe_Modern.plot(d3_return.q,limits =[x1, x2, y1, y2, z1, z2])
-Sphe_Modern.plot(T2_return.q,limits =[x1, x2, y1, y2, z1, z2])
-Sphe_Modern.plot(T1_return.q,limits =[x1, x2, y1, y2, z1, z2],block = True)
+Sphe_Modern.plot(Traj1.q,limits =[x1, x2, y1, y2, z1, z2])
+Sphe_Modern.plot(Traj2.q,limits =[x1, x2, y1, y2, z1, z2],block = True)
+
