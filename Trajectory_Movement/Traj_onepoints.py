@@ -35,7 +35,7 @@ T2 = rtb.jtraj(q1,q2,25)
 d3 = rtb.jtraj(q2,q3,25)
 
 
-"""
+
 d3_return = rtb.jtraj(q3,q2,25)
 T2_return = rtb.jtraj(q2,q1,25)
 T1_return = rtb.jtraj(q1,q0,25)
@@ -53,4 +53,3 @@ Sphe_Modern.plot(d3.q,limits =[x1, x2, y1, y2, z1, z2])
 Sphe_Modern.plot(d3_return.q,limits =[x1, x2, y1, y2, z1, z2])
 Sphe_Modern.plot(T2_return.q,limits =[x1, x2, y1, y2, z1, z2])
 Sphe_Modern.plot(T1_return.q,limits =[x1, x2, y1, y2, z1, z2],block = True)
-"""
