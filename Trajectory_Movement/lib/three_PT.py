@@ -18,9 +18,9 @@ q9 = np.array([deg_to_rad(-90),
                 ])
 
 
-T1_3traj = rtb.jtraj(q4,q7,10)
-T2_3traj = rtb.jtraj(q7,q8,10)
-d3_3traj = rtb.jtraj(q8,q9,10)
-d3_3_returntraj = rtb.jtraj(q9,q8,10)
-T2_3_returntraj = rtb.jtraj(q8,q7,10)
-T1_1_returntraj = rtb.jtraj(q7,start,10)
+T1_3traj = rtb.jtraj(q4,q7,5)
+T2_3traj = rtb.jtraj(q7,q8,5)
+d3_3traj = rtb.jtraj(q8,q9,5)
+d3_3_returntraj = rtb.jtraj(q9,q8,5)
+T2_3_returntraj = rtb.jtraj(q8,q7,5)
+T1_1_returntraj = rtb.jtraj(q7,start,5)
