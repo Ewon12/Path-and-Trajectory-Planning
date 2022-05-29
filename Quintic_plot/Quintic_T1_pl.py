@@ -4,14 +4,7 @@ Created on Wednesday 25/05/2022
 Title: Quintic Polynomial(Trajectory Planning) - Theta 1 of Spherical Manipulator - Modern Variant
 Author: Aaron Joshua M. Apolonia
 Team: Group 12-Block C
-qi = 30
-qf = 90
-vi = 0
-vf = 1.2
-aci = 0
-acf = 0.024
-ti = 0
-tf = 50
+Based on Trajectory 1 point
 """
 
 from time import time
@@ -21,7 +14,7 @@ import matplotlib.pyplot as plt
 def deg_to_rad(T):
     return(T/180)*np.pi
 
-qi = float(30)
+qi = float(0)
 qi = deg_to_rad(qi)
 
 vi = float(0)
@@ -33,14 +26,14 @@ aci = deg_to_rad(aci)
 qf = float(90)
 qf = deg_to_rad(qf)
 
-vf = float(1.2)
+vf = float(3.6)
 vf = deg_to_rad(vf)
 
-acf = float(0.024)
+acf = float(0.072)
 acf = deg_to_rad(acf)
 
 ti = float(0) 
-tf = float(50)
+tf = float(25)
 
 M =[
     [1, ti, ti**2, ti**3, ti**4, ti**5],

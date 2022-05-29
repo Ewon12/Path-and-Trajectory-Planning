@@ -4,10 +4,7 @@ Created on Wednesday 25/05/2022
 Title: Cubic Polynomials(Path Planning) - D3 of Spherical Manipulator - Modern Variant
 Author: Aaron Joshua M. Apolonia
 Team: Group 12-Block C
-di = 40mm
-df = 60mm
-ti = 0
-tf = 50
+Based on trajectory 1 point
 """
 
 from time import time
@@ -19,13 +16,13 @@ def mm_to_meter(a):
     m = 1000
     return a/m
 
-di = float(40)
+di = float(400)
 di = mm_to_meter(di)
-df = float(60)
+df = float(400+200)
 df = mm_to_meter(df)
 
 ti = float(0) 
-tf = float(50) 
+tf = float(25) 
 x = np.arange(ti, tf, 0.05)
 
 def cubic(t,a,b,c):

@@ -4,14 +4,7 @@ Created on Wednesday 25/05/2022
 Title: duintic Polynomial(Trajectory Planning) - d3 of Spherical Manipulator - Modern Variant
 Author: Aaron Joshua M. Apolonia
 Team: Group 12-Block C
-di = 40mm
-df = 60mm
-vi = 0
-vf = 0.4
-aci = 0
-acf = 0.008
-ti = 0
-tf = 50
+Based on Trajectory 1 Point
 """
 
 from time import time
@@ -22,21 +15,21 @@ def mm_to_meter(a):
     m = 1000
     return a/m
 
-di = float(40)
+di = float(400)
 di = mm_to_meter(di)
 vi = float(0)
 vi = mm_to_meter(vi)
 aci = float(0)
 aci = mm_to_meter(aci)
-df = float(60)
+df = float(600)
 df = mm_to_meter(df)
-vf = float(0.4)
+vf = float(8)
 vf = mm_to_meter(vf)
-acf = float(0.008)
+acf = float(0.32)
 acf = mm_to_meter(acf)
 
 ti = float(0) 
-tf = float(50)
+tf = float(25)
 
 M =[
     [1, ti, ti**2, ti**3, ti**4, ti**5],
@@ -64,6 +57,6 @@ plt.title("Trajectory Planning of d3")
 plt.xlabel("time(s)")
 plt.ylabel("d3(meter)")
 plt.plot(x,y,'g',linestyle = '-')
-plt.text(0.1, 0.05, 'd(t) = c0 + c1*t + c2*t**2 + c3*t**3 + c4*t**4 + c5*t**5')
+plt.text(5, 0.5, 'd(t) = c0 + c1*t + c2*t**2 + c3*t**3 + c4*t**4 + c5*t**5')
 plt.grid(True)
 plt.show()

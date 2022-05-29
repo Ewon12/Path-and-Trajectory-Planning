@@ -4,10 +4,7 @@ Created on Wednesday 25/05/2022
 Title: Cubic Polynomials(Path Planning) - Theta 2 of Spherical Manipulator - Modern Variant
 Author: Aaron Joshua M. Apolonia
 Team: Group 12-Block C
-qi = 0
-qf = -20mm
-ti = 0
-tf = 50
+Based on Trajectory 1 point
 """
 
 from time import time
@@ -19,11 +16,11 @@ def deg_to_rad(T):
 
 qi = float(0)
 qi = deg_to_rad(qi)
-qf = float(-20)
+qf = float(-90)
 qf = deg_to_rad(qf)
 
 ti = float(0) 
-tf = float(50) 
+tf = float(25) 
 x = np.arange(ti, tf, 0.05)
 
 def cubic(t,a,b,c):
