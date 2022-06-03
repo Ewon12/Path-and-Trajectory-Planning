@@ -7,7 +7,7 @@ Team: Group 12-Block C
 Based on Trajectory 1 point
 """
 
-from time import time
+
 import numpy as np
 import matplotlib.pyplot as plt
 
